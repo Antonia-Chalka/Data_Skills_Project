@@ -7,4 +7,10 @@ editor_options:
   chunk_output_type: console
 ---
 
-Describe your project.
+This is a data presentation for the University of Edinburgh's Developing your Data Skills Workshop, Cohort 17.
+
+Created by Antonia Chalka, using the following:
+
+workflowr
+openrefine
+#todo, link appropriately
