@@ -146,10 +146,11 @@ summary(clean_data)
 ```{r, host_plots}
 
 host_plot <- clean_data %>% count(Source.Host,Source.Context) %>%
-  ggplot(aes(x=Source.Host,y=n,fill=Source.Context)) + 
+  ggplot(aes(x=Source.Host,y=n,fill=Source.Context, label=n)) + 
   geom_bar(stat="identity") +
   labs(title="STm Sequences Collected in the United States by Host", y="Num. of Sequences", x="Host", fill="Host Context") +
-  theme_bw()
+  theme_bw() +
+  geom_text(size = 3, position = position_stack(vjust = 0.5))
 
 ggplotly(host_plot)
 
