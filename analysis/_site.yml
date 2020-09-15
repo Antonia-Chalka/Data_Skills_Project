@@ -1,7 +1,7 @@
-name: "Data_Skills_Project"
+name: Data_Skills_Project
 output_dir: ../docs
 navbar:
-  title: "Data_Skills_Project"
+  title: Data_Skills_Project
   left:
   - text: Home
     href: index.html
@@ -9,6 +9,10 @@ navbar:
     href: about.html
   - text: License
     href: license.html
+  right:
+  - icon: fa-github
+    text: Source code
+    href: https://github.com/Antonia-Chalka/Data_Skills_Project
 output:
   workflowr::wflow_html:
     toc: yes
