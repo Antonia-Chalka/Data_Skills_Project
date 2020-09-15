@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Home</title>
+
+<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.15/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+<script src="site_libs/plotly-binding-4.9.2.1/plotly.js"></script>
+<script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="site_libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="site_libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<link rel="icon" href="https://github.com/workflowr/workflowr-assets/raw/master/img/reproducible.png">
+<!-- Add a small amount of space between sections. -->
+<style type="text/css">
+div.section {
+  padding-top: 12px;
+}
+</style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Data_Skills_Project</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="about.html">About</a>
+</li>
+<li>
+  <a href="license.html">License</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/Antonia-Chalka/Data_Skills_Project">
+    <span class="fa fa-github"></span>
+     
+    Source code
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Home</h1>
+
+</div>
+
+
+<p>
+<button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
+<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
+</button>
+</p>
+<div id="workflowr-report" class="collapse">
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#summary">Summary</a>
+</li>
+<li>
+<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> </a>
+</li>
+<li>
+<a data-toggle="tab" href="#versions">Past versions</a>
+</li>
+</ul>
+<div class="tab-content">
+<div id="summary" class="tab-pane fade in active">
+<p>
+<strong>Last updated:</strong> 2020-09-15
+</p>
+<p>
+<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
+</p>
+<p>
+<strong>Knit directory:</strong> <code>Data_Skills_Project/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
+</p>
+<p>
+This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis was created with <a
+  href="https://github.com/jdblischak/workflowr">workflowr</a> (version 1.6.2). The <em>Checks</em> tab describes the reproducibility checks that were applied when the results were created. The <em>Past versions</em> tab lists the development history.
+</p>
+<hr>
+</div>
+<div id="checks" class="tab-pane fade">
+<div id="workflowr-checks" class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date </a>
+</p>
+</div>
+<div id="strongRMarkdownfilestronguptodate" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongEnvironmentstrongempty"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Environment:</strong> empty </a>
+</p>
+</div>
+<div id="strongEnvironmentstrongempty" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great job! The global environment was empty. Objects defined in the global environment can affect the analysis in your R Markdown file in unknown ways. For reproduciblity it’s best to always run the code in an empty environment.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongSeedstrongcodesetseed20200412code"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Seed:</strong> <code>set.seed(20200412)</code> </a>
+</p>
+</div>
+<div id="strongSeedstrongcodesetseed20200412code" class="panel-collapse collapse">
+<div class="panel-body">
+<p>The command <code>set.seed(20200412)</code> was run prior to running the code in the R Markdown file. Setting a seed ensures that any results that rely on randomness, e.g. subsampling or permutations, are reproducible.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongSessioninformationstrongrecorded"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Session information:</strong> recorded </a>
+</p>
+</div>
+<div id="strongSessioninformationstrongrecorded" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great job! Recording the operating system, R version, and package versions is critical for reproducibility.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongCachestrongnone"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Cache:</strong> none </a>
+</p>
+</div>
+<div id="strongCachestrongnone" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Nice! There were no cached chunks for this analysis, so you can be confident that you successfully produced the results during this run.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongFilepathsstrongrelative"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>File paths:</strong> relative </a>
+</p>
+</div>
+<div id="strongFilepathsstrongrelative" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great job! Using relative paths to the files within your workflowr project makes it easier to run your code on other machines.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomAntoniaChalkaDataSkillsProjecttree1861a5d56e4219665f625f732078281d67ba2e84targetblank1861a5da"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/Antonia-Chalka/Data_Skills_Project/tree/1861a5d56e4219665f625f732078281d67ba2e84" target="_blank">1861a5d</a> </a>
+</p>
+</div>
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomAntoniaChalkaDataSkillsProjecttree1861a5d56e4219665f625f732078281d67ba2e84targetblank1861a5da" class="panel-collapse collapse">
+<div class="panel-body">
+<p>
+Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
+</p>
+<p>
+The results in this page were generated with repository version <a href="https://github.com/Antonia-Chalka/Data_Skills_Project/tree/1861a5d56e4219665f625f732078281d67ba2e84" target="_blank">1861a5d</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+</p>
+<p>
+Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
+</p>
+<pre><code>
+Ignored files:
+    Ignored:    .Rhistory
+    Ignored:    .Rproj.user/
+
+</code></pre>
+<p>
+Note that any generated files, e.g. HTML, png, CSS, etc., are not included in this status report because it is ok for generated content to have uncommitted changes.
+</p>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</div>
+<div id="versions" class="tab-pane fade">
+
+<p>
+These are the previous versions of the repository in which changes were made to the R Markdown (<code>analysis/index.Rmd</code>) and HTML (<code>docs/index.html</code>) files. If you’ve configured a remote Git repository (see <code>?wflow_git_remote</code>), click on the hyperlinks in the table below to view the files as they were in that past version.
+</p>
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+File
+</th>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+<th>
+Message
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/Antonia-Chalka/Data_Skills_Project/blob/2da8cf3ab82dc34848dfbae37bf611bda0b4f7af/analysis/index.Rmd" target="_blank">2da8cf3</a>
+</td>
+<td>
+Antonia Chalka
+</td>
+<td>
+2020-09-15
+</td>
+<td>
+Added bullet points to conclusion
+</td>
+</tr>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/Antonia-Chalka/Data_Skills_Project/blob/505bc3333cbc791feedc1844bca5921acf84ac54/analysis/index.Rmd" target="_blank">505bc33</a>
+</td>
+<td>
+Antonia Chalka
+</td>
+<td>
+2020-09-15
+</td>
+<td>
+License &amp; Small cosmetic changes
+</td>
+</tr>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/Antonia-Chalka/Data_Skills_Project/blob/ebc3c88baa5d8af43c8bfb4e399b4f206932ac2d/analysis/index.Rmd" target="_blank">ebc3c88</a>
+</td>
+<td>
+Antonia Chalka
+</td>
+<td>
+2020-08-21
+</td>
+<td>
+Cosmetic changes
+</td>
+</tr>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/Antonia-Chalka/Data_Skills_Project/blob/8d511b633bdd83a2ee0c960b2b711e038b5564e8/analysis/index.Rmd" target="_blank">8d511b6</a>
+</td>
+<td>
+Antonia Chalka
+</td>
+<td>
+2020-07-29
+</td>
+<td>
+First Draft
+</td>
+</tr>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/Antonia-Chalka/Data_Skills_Project/blob/87734c3adf20d753ac61b800acaec9405128325a/analysis/index.Rmd" target="_blank">87734c3</a>
+</td>
+<td>
+Annita
+</td>
+<td>
+2020-04-12
+</td>
+<td>
+Start workflowr project.
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<pre class="r"><code>library(tidyverse)
+library(DT)
+library(plotly)</code></pre>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<div id="topic" class="section level2">
+<h2>Topic</h2>
+<p><em>Salmonella enterica</em> is a promiscuous pathogen, able to infect most vertbrates and a small number of invertebrates. The bacterium can be found worldwide, with many different strains that are are to infect different combination of hosts. Thus, it is important to build models for source prediction (i.e. where interms of host an outbreak originated from), and host prediction (what species can the strain of an outbreak infect). For that purpose, there have been many studies, my PhD included, which use machine learning to build such models.</p>
+<p>Before such models are constructed though, there is a vital step often overlooked: <em>Data Collection</em>. Hunderds of thousands of Salmonella enterica sequences are available online. However, the metadata itself may be missing, or ‘messy’ with misspellings, capitalisations, abbreviations and other syntactic choices. Moreover, their quality and distribution across other metadata (geographic origin, host, year collected etc) can very greatly and may introduce unexpected bias that dooms the creation of a high quality model from the get-go (the ’garbage-in, garbage-out paradigm).</p>
+<p>Therefore, I spent the beggining of my project aquiring and cleaning such data, though to a limited extent. The purpose of this presentation is to go over that process in greater detail, characterising and justifying my dataset as well as producing high-quality visualisations.</p>
+<hr />
+<hr />
+<hr />
+</div>
+</div>
+<div id="methods" class="section level1">
+<h1>Methods</h1>
+<div id="initial-restrictions" class="section level2">
+<h2>Initial Restrictions</h2>
+<p>Because of the large diversity of <em>S. enterica</em> serovars (genetically distinct strains), we need to make sure that any genetic variation present is due to host, not of geospatial effects, or other causes of variation. Thus, I focused on the S. Typhimurium (STm) serovar. STm is widespread, and the number one cause of zoonotic (animal to human transmission) of Salmonella outbreaks. Though STm is considered a ‘generalist’ serovar (i.e. does not have a host preference), studies have identified host-specific clades.</p>
+<p>In summary, our dataset must have the following characteristics:</p>
+<ul>
+<li><p>Serovar must be Typhimurium</p></li>
+<li><p>Same country of origin</p></li>
+<li><p>Collected with 1995-2019</p></li>
+<li>Contain over 200 sequences for the following hosts:
+<ul>
+<li>Human</li>
+<li>Bovine</li>
+<li>Poultry</li>
+<li>Swine</li>
+</ul></li>
+<li>Within hosts, sequences will be further subdivided to:
+<ul>
+<li>Animal (sequences derived from clinical data/fecal samples)</li>
+<li>Products (sequences derived from raw meat and meat products)</li>
+<li>Enviromental (sequences derived from the environment, such as feed)</li>
+</ul></li>
+</ul>
+<hr />
+<hr />
+</div>
+<div id="acquiring-data" class="section level2">
+<h2>Acquiring Data</h2>
+<p><a href="http://enterobase.warwick.ac.uk/species/index/senterica">Enterobase</a> is a repository of publicly available <em>S. enterica</em> sequences.</p>
+<p>At first glance, there are hunderds of thousands sequenecs available!</p>
+<div class="figure">
+<img src="../data/enterobase_screenshot/total.png" alt="enterobase_totals" />
+<p class="caption">enterobase_totals</p>
+</div>
+<p>Country-wise, it seems the UK and the USA have the most sequences.However, when looking at host data…</p>
+<p><img src="../data/enterobase_screenshot/uk.png" alt="UK Sequences" /> <img src="../data/enterobase_screenshot/usa.png" alt="USA Sequences" /> <img src="../data/enterobase_screenshot/source_type.png" alt="Host Data" /></p>
+<p>With that in mind, I started constructing queries for each host, where it became obvious that the data was quite messy… To demonstrate, below is one of the queries I used to capture the range:</p>
+<p><img src="../data/enterobase_screenshot/STm_USA_ChickenProducts_Query1.png" alt="Chicken_product_query" /> <img src="../data/enterobase_screenshot/STm_USA_ChickenProducts_Query2.png" alt="Chicken_product_query" /> <img src="../data/enterobase_screenshot/STm_USA_ChickenProducts_Query3.png" alt="Chicken_product_query" /></p>
+<p>After a lot of trail-and-error quaries, I got the following number of sequences:</p>
+<pre class="r"><code>read_csv(&quot;./data/STm_All_Metadata.csv&quot;) %&gt;% datatable()</code></pre>
+<pre><code>Parsed with column specification:
+cols(
+  Host = col_character(),
+  Country = col_character(),
+  Count = col_double()
+)</code></pre>
+<div id="htmlwidget-4472cc2af170b062b240" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4472cc2af170b062b240">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8"],["Human","Human","Bovine","Bovine","Poultry","Poultry","Swine","Swine"],["USA","UK","USA","UK","USA","UK","USA","UK"],[336,9043,549,104,1873,18,613,66]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Host<\/th>\n      <th>Country<\/th>\n      <th>Count<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":3},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<pre class="r"><code>read.csv(&quot;./data/STm_All_Metadata.csv&quot;) %&gt;% ggplot( aes(x=Host, y=Count)) +
+  geom_bar(stat=&quot;identity&quot;, fill=&quot;steelblue&quot;) +
+  geom_text(aes(label=Count), vjust=1.6, size=3.5) +
+  theme_bw() +
+  facet_grid(~Country )</code></pre>
+<p><img src="figure/index.Rmd/enterobase_query_summary-2.png" width="672" style="display: block; margin: auto;" /></p>
+<hr />
+<hr />
+</div>
+<div id="refinement" class="section level2">
+<h2>Refinement</h2>
+<p>After obtaining my sequences, I calculated a few quality metrics for my sequences which were irrespective of the metadata. However, the latter was still a mess…</p>
+<p>Below is my metadata from poultry-products (i.e. the sequences obtained from the example query above), as obtained from enterobase.</p>
+<pre class="r"><code>messy_data &lt;- read.delim(&quot;./data/STm_USA_ChickenProducts_Metadata.csv&quot;) 
+
+summary(messy_data)</code></pre>
+<pre><code>  Uberstrain            Name          
+ Length:1159        Length:1159       
+ Class :character   Class :character  
+ Mode  :character   Mode  :character  
+                                      
+                                      
+                                      
+                                      
+ Data.Source.Accession.No..Sequencing.Platform.Sequencing.Library.Insert.Size.Experiment.Bases.Average.Length.Status.
+ Length:1159                                                                                                         
+ Class :character                                                                                                    
+ Mode  :character                                                                                                    
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+   Barcode          Source.Niche       Source.Type        Source.Details    
+ Length:1159        Length:1159        Length:1159        Length:1159       
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+ Collection.Year Collection.Month Collection.Day Collection.Time
+ Min.   :2002    Min.   : 1.000   Mode:logical   Mode:logical   
+ 1st Qu.:2009    1st Qu.: 3.000   NA&#39;s:1159      NA&#39;s:1159      
+ Median :2012    Median : 6.000                                 
+ Mean   :2012    Mean   : 5.513                                 
+ 3rd Qu.:2017    3rd Qu.: 7.000                                 
+ Max.   :2019    Max.   :12.000                                 
+                 NA&#39;s   :1122                                   
+  Continent           Country             Region            District        
+ Length:1159        Length:1159        Length:1159        Length:1159       
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+     City           Post.Code         Latitude       Longitude      
+ Length:1159        Mode:logical   Min.   :39.80   Min.   :-111.60  
+ Class :character   NA&#39;s:1159      1st Qu.:42.70   1st Qu.: -75.30  
+ Mode  :character                  Median :42.70   Median : -73.70  
+                                   Mean   :42.36   Mean   : -82.46  
+                                   3rd Qu.:42.70   3rd Qu.: -73.70  
+                                   Max.   :42.70   Max.   : -73.70  
+                                   NA&#39;s   :1142    NA&#39;s   :1137     
+   Serovar           Subspecies        Disease        Antigenic.Formulas
+ Length:1159        Length:1159        Mode:logical   Length:1159       
+ Class :character   Class :character   NA&#39;s:1159      Class :character  
+ Mode  :character   Mode  :character                  Mode  :character  
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+ Lab.Contact        Phage.Type     Comment        Bio.Project.ID    
+ Length:1159        Mode:logical   Mode:logical   Length:1159       
+ Class :character   NA&#39;s:1159      NA&#39;s:1159      Class :character  
+ Mode  :character                                 Mode  :character  
+                                                                    
+                                                                    
+                                                                    
+                                                                    
+  Project.ID         Sample.ID         Secondary.Sample.ID Date.Entered      
+ Length:1159        Length:1159        Length:1159         Length:1159       
+ Class :character   Class :character   Class :character    Class :character  
+ Mode  :character   Mode  :character   Mode  :character    Mode  :character  
+                                                                             
+                                                                             
+                                                                             
+                                                                             
+ Release.Date          Status             Coverage           N50        
+ Length:1159        Length:1159        Min.   : 20.00   Min.   : 36398  
+ Class :character   Class :character   1st Qu.: 66.00   1st Qu.:154645  
+ Mode  :character   Mode  :character   Median : 85.00   Median :227451  
+                                       Mean   : 88.76   Mean   :218462  
+                                       3rd Qu.:103.00   3rd Qu.:279432  
+                                       Max.   :359.00   Max.   :588742  
+                                                                        
+     Length          Species          Contig.Number...200.bp. Low.Quality.Bases
+ Min.   :4675072   Length:1159        Min.   : 39.00          Min.   :   338   
+ 1st Qu.:4937103   Class :character   1st Qu.: 71.00          1st Qu.:  3465   
+ Median :4983232   Mode  :character   Median : 82.00          Median :  6067   
+ Mean   :4988482                      Mean   : 92.15          Mean   : 14157   
+ 3rd Qu.:5051122                      3rd Qu.:100.00          3rd Qu.: 15200   
+ Max.   :5488352                      Max.   :583.00          Max.   :224269   
+                                                                               
+    Version      Assembly.Barcode  
+ Min.   :2.200   Length:1159       
+ 1st Qu.:2.200   Class :character  
+ Median :3.410   Mode  :character  
+ Mean   :3.191                     
+ 3rd Qu.:3.610                     
+ Max.   :4.100                     
+                                   </code></pre>
+<p>Capitalisation, mispellings, abbreviations… Have to clean all this up. Though I could QC based on metrics alone, I wanted to have a neater picture of my whole dataset.</p>
+<p>So, I imported my datasets in openrefine (version 3.3). I won’t go into boring detail about the data cleanig progress, but in broad strokes: * combined metadata and sequence quality metrics * cleaned up abbreviations, mispellings, cases etc… (took majority of my time) - also transformed/added a few columns based on data above (eg 2 letter code for states) * filtered my dataset according to my quality metric cuttoffs</p>
+<p>After cleaning the data, the end result is much neater:</p>
+<pre class="r"><code>clean_data &lt;- read.csv(&quot;./data/metadata_quast_all_merged_filtered_discarded.csv&quot;)
+
+summary(clean_data)</code></pre>
+<pre><code>   Assembly           Filename         X..contigs.....0.bp.
+ Length:3313        Length:3313        Min.   : 36.0       
+ Class :character   Class :character   1st Qu.: 74.0       
+ Mode  :character   Mode  :character   Median : 86.0       
+                                       Mean   : 93.4       
+                                       3rd Qu.:103.0       
+                                       Max.   :472.0       
+                                                           
+ X..contigs.....1000.bp. X..contigs.....5000.bp. X..contigs.....10000.bp.
+ Min.   : 18.0           Min.   : 14.00          Min.   : 13.0           
+ 1st Qu.: 48.0           1st Qu.: 37.00          1st Qu.: 33.0           
+ Median : 54.0           Median : 42.00          Median : 38.0           
+ Mean   : 61.2           Mean   : 47.86          Mean   : 42.8           
+ 3rd Qu.: 67.0           3rd Qu.: 52.00          3rd Qu.: 47.0           
+ Max.   :241.0           Max.   :147.00          Max.   :124.0           
+                                                                         
+ X..contigs.....25000.bp. X..contigs.....50000.bp. Total.length.....0.bp.
+ Min.   :13.00            Min.   :10.00            Min.   :4527406       
+ 1st Qu.:29.00            1st Qu.:22.00            1st Qu.:4910518       
+ Median :32.00            Median :24.00            Median :4963434       
+ Mean   :35.31            Mean   :25.13            Mean   :4968329       
+ 3rd Qu.:39.00            3rd Qu.:28.00            3rd Qu.:5020735       
+ Max.   :76.00            Max.   :42.00            Max.   :5543262       
+                                                                         
+ Total.length.....1000.bp. Total.length.....5000.bp. Total.length.....10000.bp.
+ Min.   :4521972           Min.   :4508798           Min.   :4409118           
+ 1st Qu.:4898978           1st Qu.:4873666           1st Qu.:4840889           
+ Median :4951017           Median :4923186           Median :4890094           
+ Mean   :4955303           Mean   :4925449           Mean   :4889892           
+ 3rd Qu.:5007088           3rd Qu.:4976309           3rd Qu.:4937721           
+ Max.   :5491025           Max.   :5417711           Max.   :5295274           
+                                                                               
+ Total.length.....25000.bp. Total.length.....50000.bp.   X..contigs    
+ Min.   :3700817            Min.   :2492096            Min.   : 27.00  
+ 1st Qu.:4706860            1st Qu.:4304359            1st Qu.: 56.00  
+ Median :4788268            Median :4482802            Median : 65.00  
+ Mean   :4759212            Mean   :4384804            Mean   : 71.19  
+ 3rd Qu.:4854221            3rd Qu.:4600673            3rd Qu.: 78.00  
+ Max.   :5220723            Max.   :4989448            Max.   :291.00  
+                                                                       
+ Largest.contig     Total.length     Reference.length      GC....     
+ Min.   : 159757   Min.   :4525725   Min.   :4809037   Min.   :51.59  
+ 1st Qu.: 460854   1st Qu.:4904449   1st Qu.:4809037   1st Qu.:52.09  
+ Median : 603471   Median :4957037   Median :4809037   Median :52.12  
+ Mean   : 578158   Mean   :4962110   Mean   :4809037   Mean   :52.12  
+ 3rd Qu.: 707849   3rd Qu.:5014641   3rd Qu.:4809037   3rd Qu.:52.15  
+ Max.   :1804610   Max.   :5504721   Max.   :4809037   Max.   :52.37  
+                                                                      
+ Reference.GC....     N50.x             NG50             N75        
+ Min.   :52.09    Min.   : 50766   Min.   : 52391   Min.   : 26405  
+ 1st Qu.:52.09    1st Qu.:172545   1st Qu.:180711   1st Qu.: 85394  
+ Median :52.09    Median :223068   Median :225951   Median :108413  
+ Mean   :52.09    Mean   :222048   Mean   :228727   Mean   :113467  
+ 3rd Qu.:52.09    3rd Qu.:277990   3rd Qu.:282293   3rd Qu.:149858  
+ Max.   :52.09    Max.   :758171   Max.   :758171   Max.   :387993  
+                                                                    
+      NG75             L50              LG50             L75       
+ Min.   : 26405   Min.   : 2.000   Min.   : 2.000   Min.   : 4.00  
+ 1st Qu.: 90835   1st Qu.: 6.000   1st Qu.: 6.000   1st Qu.:12.00  
+ Median :125743   Median : 7.000   Median : 7.000   Median :15.00  
+ Mean   :124461   Mean   : 8.511   Mean   : 8.109   Mean   :17.57  
+ 3rd Qu.:150128   3rd Qu.: 9.000   3rd Qu.: 9.000   3rd Qu.:19.00  
+ Max.   :387993   Max.   :34.000   Max.   :30.000   Max.   :70.00  
+                                                                   
+      LG75       X..misassemblies X..misassembled.contigs
+ Min.   : 4.00   Min.   : 53.00   Min.   :10.00          
+ 1st Qu.:12.00   1st Qu.: 73.00   1st Qu.:21.00          
+ Median :14.00   Median : 76.00   Median :23.00          
+ Mean   :16.41   Mean   : 75.81   Mean   :24.68          
+ 3rd Qu.:18.00   3rd Qu.: 79.00   3rd Qu.:27.00          
+ Max.   :60.00   Max.   :110.00   Max.   :49.00          
+                                                         
+ Misassembled.contigs.length X..local.misassemblies X..scaffold.gap.ext..mis.
+ Min.   :2319242             Min.   :105.0          Min.   :0.0000           
+ 1st Qu.:4038381             1st Qu.:126.0          1st Qu.:0.0000           
+ Median :4281713             Median :129.0          Median :0.0000           
+ Mean   :4160478             Mean   :128.5          Mean   :0.1639           
+ 3rd Qu.:4413203             3rd Qu.:131.0          3rd Qu.:0.0000           
+ Max.   :4688963             Max.   :150.0          Max.   :2.0000           
+                                                                             
+ X..scaffold.gap.loc..mis. X..unaligned.mis..contigs X..unaligned.contigs
+ Min.   :0.0000            Min.   :0.000             Length:3313         
+ 1st Qu.:0.0000            1st Qu.:1.000             Class :character    
+ Median :0.0000            Median :2.000             Mode  :character    
+ Mean   :0.2877            Mean   :1.814                                 
+ 3rd Qu.:0.0000            3rd Qu.:2.000                                 
+ Max.   :9.0000            Max.   :9.000                                 
+                                                                         
+ Unaligned.length  Genome.fraction.... Duplication.ratio X..N.s.per.100.kbp
+ Min.   : 345332   Min.   :86.09       Min.   :1.001     Min.   : 0.000    
+ 1st Qu.: 662747   1st Qu.:87.93       1st Qu.:1.001     1st Qu.: 0.000    
+ Median : 716600   Median :88.04       Median :1.002     Median : 0.410    
+ Mean   : 719864   Mean   :88.04       Mean   :1.002     Mean   : 2.815    
+ 3rd Qu.: 768994   3rd Qu.:88.15       3rd Qu.:1.002     3rd Qu.: 4.750    
+ Max.   :1229487   Max.   :88.85       Max.   :1.010     Max.   :29.450    
+                                                                           
+ X..mismatches.per.100.kbp X..indels.per.100.kbp Largest.alignment
+ Min.   :1248              Min.   :23.00         Min.   : 76576   
+ 1st Qu.:1305              1st Qu.:26.19         1st Qu.:129123   
+ Median :1307              Median :26.34         Median :148107   
+ Mean   :1309              Mean   :26.34         Mean   :164618   
+ 3rd Qu.:1310              3rd Qu.:26.52         3rd Qu.:196297   
+ Max.   :1526              Max.   :30.14         Max.   :261258   
+                                                                  
+ Total.aligned.length      NA50           NGA50            NA75      
+ Min.   :4146441      Min.   :27503   Min.   :30019   Min.   : 7599  
+ 1st Qu.:4233846      1st Qu.:51133   1st Qu.:53837   1st Qu.:19108  
+ Median :4239864      Median :57185   Median :57442   Median :24652  
+ Mean   :4240127      Mean   :54351   Mean   :56344   Mean   :23198  
+ 3rd Qu.:4246875      3rd Qu.:57947   3rd Qu.:58646   3rd Qu.:26261  
+ Max.   :4286460      Max.   :81447   Max.   :81447   Max.   :41786  
+                                                                     
+     NGA75            LA50           LGA50            LA75       
+ Min.   :13083   Min.   :19.00   Min.   :21.00   Min.   : 39.00  
+ 1st Qu.:26261   1st Qu.:27.00   1st Qu.:26.00   1st Qu.: 57.00  
+ Median :28752   Median :29.00   Median :27.00   Median : 60.00  
+ Mean   :27732   Mean   :29.71   Mean   :28.29   Mean   : 62.93  
+ 3rd Qu.:30999   3rd Qu.:31.00   3rd Qu.:29.00   3rd Qu.: 65.00  
+ Max.   :37429   Max.   :59.00   Max.   :50.00   Max.   :139.00  
+                                                                 
+     LGA75       Source.Host        Source.Context      Uberstrain       
+ Min.   : 43.0   Length:3313        Length:3313        Length:3313       
+ 1st Qu.: 54.0   Class :character   Class :character   Class :character  
+ Median : 55.0   Mode  :character   Mode  :character   Mode  :character  
+ Mean   : 58.1                                                           
+ 3rd Qu.: 59.0                                                           
+ Max.   :106.0                                                           
+                                                                         
+     Name          
+ Length:3313       
+ Class :character  
+ Mode  :character  
+                   
+                   
+                   
+                   
+ Data.Source.Accession.No..Sequencing.Platform.Sequencing.Library.Insert.Size.Experiment.Bases.Average.Length.Status.
+ Length:3313                                                                                                         
+ Class :character                                                                                                    
+ Mode  :character                                                                                                    
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+ Sequencing.Platform.s.   Barcode          Source.Details     Collection.Year
+ Length:3313            Length:3313        Length:3313        Min.   :1998   
+ Class :character       Class :character   Class :character   1st Qu.:2009   
+ Mode  :character       Mode  :character   Mode  :character   Median :2014   
+                                                              Mean   :2013   
+                                                              3rd Qu.:2017   
+                                                              Max.   :2019   
+                                                                             
+ Collection.Month Collection.Day   Continent           Country         
+ Min.   : 1.000   Min.   : 1.00   Length:3313        Length:3313       
+ 1st Qu.: 2.000   1st Qu.: 6.00   Class :character   Class :character  
+ Median : 5.000   Median : 8.00   Mode  :character   Mode  :character  
+ Mean   : 5.566   Mean   :10.09                                        
+ 3rd Qu.: 9.000   3rd Qu.:13.00                                        
+ Max.   :12.000   Max.   :22.00                                        
+ NA&#39;s   :2347     NA&#39;s   :3302                                         
+    Region           State_Code          District             City          
+ Length:3313        Length:3313        Length:3313        Length:3313       
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+    Latitude       Longitude         Serovar           Subspecies       
+ Min.   :31.95   Min.   :-123.00   Length:3313        Length:3313       
+ 1st Qu.:37.09   1st Qu.:-111.60   Class :character   Class :character  
+ Median :42.30   Median : -95.71   Mode  :character   Mode  :character  
+ Mean   :40.43   Mean   : -96.78                                        
+ 3rd Qu.:42.70   3rd Qu.: -75.30                                        
+ Max.   :45.54   Max.   : -71.00                                        
+ NA&#39;s   :3268    NA&#39;s   :3236                                           
+ Antigenic.Formulas Lab.Contact        Lab.Contact.1      Lab.Contact.2     
+ Length:3313        Length:3313        Length:3313        Length:3313       
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+ Lab.Contact.3      Bio.Project.ID      Project.ID         Sample.ID        
+ Length:3313        Length:3313        Length:3313        Length:3313       
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+ Secondary.Sample.ID Date.Entered       Release.Date          Status         
+ Length:3313         Length:3313        Length:3313        Length:3313       
+ Class :character    Class :character   Class :character   Class :character  
+ Mode  :character    Mode  :character   Mode  :character   Mode  :character  
+                                                                             
+                                                                             
+                                                                             
+                                                                             
+    Coverage          N50.y            Length          Species         
+ Min.   : 19.00   Min.   : 49270   Min.   :4527406   Length:3313       
+ 1st Qu.: 67.00   1st Qu.:172545   1st Qu.:4910306   Class :character  
+ Median : 86.00   Median :223067   Median :4963434   Mode  :character  
+ Mean   : 93.25   Mean   :221865   Mean   :4968164                     
+ 3rd Qu.:109.00   3rd Qu.:277921   3rd Qu.:5020449                     
+ Max.   :611.00   Max.   :758171   Max.   :5543262                     
+                                                                       
+ Contig.Number...200.bp. Low.Quality.Bases    Version     
+ Min.   : 32.00          Min.   :   338    Min.   :2.000  
+ 1st Qu.: 70.00          1st Qu.:  3380    1st Qu.:2.200  
+ Median : 80.00          Median :  6109    Median :3.410  
+ Mean   : 86.63          Mean   : 14323    Mean   :3.231  
+ 3rd Qu.: 95.00          3rd Qu.: 17414    3rd Qu.:4.000  
+ Max.   :367.00          Max.   :224269    Max.   :4.100  
+                                                          </code></pre>
+<hr />
+<hr />
+<hr />
+</div>
+</div>
+<div id="analysis" class="section level1">
+<h1>Analysis</h1>
+<p><strong>Goal</strong>: What do I have in my dataset, and is it appropriate for my reserach? (What <strong>is</strong> appropriate for my reserach in the first place?)</p>
+<p><strong>General Points of Interest</strong></p>
+<p><strong>Host</strong>: At least 100 sequences per host, and good spread across subcategories (especially in animal/products, environmental is interesting to examine but not vital)</p>
+<p><strong>Organisation</strong>: Due to different collection and analysis methods, the majority of my sequences should come from govermental agencies, such as the CDC for clinical samples or the FDA for food samples.</p>
+<p><strong>State</strong>: Geographically, how are my sequences spread out? Natural variations will occur due to districution of famrs and loivestock across the country, but I need to make sure that I dont have any extreme cases such as 90% of my swine product sequences coming from the same farm.</p>
+<p><strong>Chronology</strong>: When where my samples collected? I expect an increase in sequences collected from year to year, following advances in next-gen sequencing.</p>
+<hr />
+<hr />
+<div id="host" class="section level2">
+<h2>Host</h2>
+<pre class="r"><code>host_plot &lt;- clean_data %&gt;% count(Source.Host,Source.Context) %&gt;%
+  ggplot(aes(x=Source.Host,y=n,fill=Source.Context, label=n)) + 
+  geom_bar(stat=&quot;identity&quot;) +
+  labs(title=&quot;STm Sequences Collected in the United States by Host&quot;, y=&quot;Num. of Sequences&quot;, x=&quot;Host&quot;, fill=&quot;Host Context&quot;) +
+  theme_bw() +
+  geom_text(size = 3, position = position_stack(vjust = 0.5))
+
+ggplotly(host_plot)</code></pre>
+<div id="htmlwidget-9cedb1010fb3afdbcb32" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9cedb1010fb3afdbcb32">{"x":{"data":[{"orientation":"v","width":[0.9,0.9,0.9,0.9],"base":[122,0,1175,118],"x":[1,2,3,4],"y":[421,331,658,488],"text":["Source.Host: Bovine<br />n:  421<br />Source.Context: Animal<br />n:  421","Source.Host: Human<br />n:  331<br />Source.Context: Animal<br />n:  331","Source.Host: Poultry<br />n:  658<br />Source.Context: Animal<br />n:  658","Source.Host: Swine<br />n:  488<br />Source.Context: Animal<br />n:  488"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(248,118,109,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Animal","legendgroup":"Animal","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.9,0.9],"base":[108,1148],"x":[1,3],"y":[14,27],"text":["Source.Host: Bovine<br />n:   14<br />Source.Context: Environmental<br />n:   14","Source.Host: Poultry<br />n:   27<br />Source.Context: Environmental<br />n:   27"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(0,186,56,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Environmental","legendgroup":"Environmental","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.9,0.9,0.9],"base":[0,0,0],"x":[1,3,4],"y":[108,1148,118],"text":["Source.Host: Bovine<br />n:  108<br />Source.Context: Product<br />n:  108","Source.Host: Poultry<br />n: 1148<br />Source.Context: Product<br />n: 1148","Source.Host: Swine<br />n:  118<br />Source.Context: Product<br />n:  118"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(97,156,255,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Product","legendgroup":"Product","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,2,3,4],"y":[332.5,165.5,1504,362],"text":[421,331,658,488],"hovertext":["Source.Host: Bovine<br />n:  421<br />Source.Context: Animal<br />n:  421","Source.Host: Human<br />n:  331<br />Source.Context: Animal<br />n:  331","Source.Host: Poultry<br />n:  658<br />Source.Context: Animal<br />n:  658","Source.Host: Swine<br />n:  488<br />Source.Context: Animal<br />n:  488"],"textfont":{"size":11.3385826771654,"color":"rgba(0,0,0,1)"},"type":"scatter","mode":"text","hoveron":"points","name":"Animal","legendgroup":"Animal","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,3],"y":[115,1161.5],"text":[14,27],"hovertext":["Source.Host: Bovine<br />n:   14<br />Source.Context: Environmental<br />n:   14","Source.Host: Poultry<br />n:   27<br />Source.Context: Environmental<br />n:   27"],"textfont":{"size":11.3385826771654,"color":"rgba(0,0,0,1)"},"type":"scatter","mode":"text","hoveron":"points","name":"Environmental","legendgroup":"Environmental","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,3,4],"y":[54,574,59],"text":[108,1148,118],"hovertext":["Source.Host: Bovine<br />n:  108<br />Source.Context: Product<br />n:  108","Source.Host: Poultry<br />n: 1148<br />Source.Context: Product<br />n: 1148","Source.Host: Swine<br />n:  118<br />Source.Context: Product<br />n:  118"],"textfont":{"size":11.3385826771654,"color":"rgba(0,0,0,1)"},"type":"scatter","mode":"text","hoveron":"points","name":"Product","legendgroup":"Product","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":43.7625570776256,"r":7.30593607305936,"b":40.1826484018265,"l":48.9497716894977},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"title":{"text":"STm Sequences Collected in the United States by Host","font":{"color":"rgba(0,0,0,1)","family":"","size":17.5342465753425},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.4,4.6],"tickmode":"array","ticktext":["Bovine","Human","Poultry","Swine"],"tickvals":[1,2,3,4],"categoryorder":"array","categoryarray":["Bovine","Human","Poultry","Swine"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"Host","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-91.65,1924.65],"tickmode":"array","ticktext":["0","500","1000","1500"],"tickvals":[0,500,1000,1500],"categoryorder":"array","categoryarray":["0","500","1000","1500"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Num. of Sequences","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(51,51,51,1)","width":0.66417600664176,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895},"y":0.96751968503937},"annotations":[{"text":"Host Context","x":1.02,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"left","yanchor":"bottom","legendTitle":true}],"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"68f022a35674":{"x":{},"y":{},"fill":{},"label":{},"type":"bar"},"68f0250cdc2":{"x":{},"y":{},"fill":{},"label":{}}},"cur_data":"68f022a35674","visdat":{"68f022a35674":["function (y) ","x"],"68f0250cdc2":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<p>From the get-go we can see the following:</p>
+<ul>
+<li><p>Environmental samples make the minority of all samples within poultry and bovine, with none in human and swine.</p></li>
+<li><p>All of the human sequences are clinical</p></li>
+<li><p>The majority of sequences within bovine and swine are animal/clinical, whereas most in poultry are derived from meat products</p></li>
+</ul>
+<p>Overall, I have passed my thershold for number of sequences across all hosts. Moreover, I have over 100 sequences in meat products alone across hosts (humans excluded for obvious reasons), that it may be possible to investigate if there is any selection of STm sequences when moving from animal to product.</p>
+<hr />
+<hr />
+</div>
+<div id="organisation" class="section level2">
+<h2>Organisation</h2>
+<div id="host-1" class="section level3">
+<h3>Host</h3>
+<pre class="r"><code>org_host_plot &lt;- clean_data %&gt;% count(Lab.Contact.1, Source.Host) %&gt;%
+  ggplot(aes(x=Lab.Contact.1, y=n, fill=Source.Host)) + 
+  geom_bar(stat =&quot;identity&quot;) +
+  labs(title=&quot;STm Sequences Collected in the United States&quot;,y=&quot;Num. of Sequences&quot;, x=&quot;Collection Agency/Laboratory&quot;, fill=&quot;Host&quot;)+
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+
+ggplotly(org_host_plot)</code></pre>
+<div id="htmlwidget-0087bda75c46438cf060" style="width:960px;height:960px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0087bda75c46438cf060">{"x":{"data":[{"orientation":"v","width":[0.9,0.899999999999999,0.899999999999999,0.899999999999999],"base":[4,1606,911,58],"x":[1,9,13,14],"y":[2,392,148,1],"text":["Lab.Contact.1: <br />n:    2<br />Source.Host: Bovine","Lab.Contact.1: Food and Drug Administration<br />n:  392<br />Source.Host: Bovine","Lab.Contact.1: United States Department of Agriculture<br />n:  148<br />Source.Host: Bovine","Lab.Contact.1: University of California Davis - 100K Genome Project<br />n:    1<br />Source.Host: Bovine"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(248,118,109,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Bovine","legendgroup":"Bovine","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.9,0.9,0.9,0.9,0.9,0.899999999999999,0.899999999999999,0.899999999999999,0.899999999999999,0.899999999999999,0.899999999999999],"base":[0,0,0,1,0,0,1478,0,0,901,52],"x":[2,3,4,5,7,8,9,10,12,13,14],"y":[2,8,77,70,1,20,128,8,1,10,6],"text":["Lab.Contact.1: Brigham & Women's Hospital<br />n:    2<br />Source.Host: Human","Lab.Contact.1: California Department of Public Health<br />n:    8<br />Source.Host: Human","Lab.Contact.1: Carlos<br />n:   77<br />Source.Host: Human","Lab.Contact.1: Center for Disease Control and Prevention<br />n:   70<br />Source.Host: Human","Lab.Contact.1: Colorado State University<br />n:    1<br />Source.Host: Human","Lab.Contact.1: Cornell University<br />n:   20<br />Source.Host: Human","Lab.Contact.1: Food and Drug Administration<br />n:  128<br />Source.Host: Human","Lab.Contact.1: Kerry Cooper<br />n:    8<br />Source.Host: Human","Lab.Contact.1: North Dakota State University<br />n:    1<br />Source.Host: Human","Lab.Contact.1: United States Department of Agriculture<br />n:   10<br />Source.Host: Human","Lab.Contact.1: University of California Davis - 100K Genome Project<br />n:    6<br />Source.Host: Human"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(124,174,0,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Human","legendgroup":"Human","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.9,0.9,0.899999999999999,0.899999999999999,0.899999999999999,0.899999999999999],"base":[0,0,450,0,145,10],"x":[1,6,9,11,13,14],"y":[4,1,1028,2,756,42],"text":["Lab.Contact.1: <br />n:    4<br />Source.Host: Poultry","Lab.Contact.1: CLC BIO<br />n:    1<br />Source.Host: Poultry","Lab.Contact.1: Food and Drug Administration<br />n: 1028<br />Source.Host: Poultry","Lab.Contact.1: NCBI<br />n:    2<br />Source.Host: Poultry","Lab.Contact.1: United States Department of Agriculture<br />n:  756<br />Source.Host: Poultry","Lab.Contact.1: University of California Davis - 100K Genome Project<br />n:   42<br />Source.Host: Poultry"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(0,191,196,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Poultry","legendgroup":"Poultry","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.9,0.899999999999999,0.899999999999999,0.899999999999999],"base":[0,0,0,0],"x":[5,9,13,14],"y":[1,450,145,10],"text":["Lab.Contact.1: Center for Disease Control and Prevention<br />n:    1<br />Source.Host: Swine","Lab.Contact.1: Food and Drug Administration<br />n:  450<br />Source.Host: Swine","Lab.Contact.1: United States Department of Agriculture<br />n:  145<br />Source.Host: Swine","Lab.Contact.1: University of California Davis - 100K Genome Project<br />n:   10<br />Source.Host: Swine"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(199,124,255,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Swine","legendgroup":"Swine","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":40.8401826484018,"r":7.30593607305936,"b":329.497716894977,"l":48.9497716894977},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"title":{"text":"STm Sequences Collected in the United States","font":{"color":"rgba(0,0,0,1)","family":"","size":17.5342465753425},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.4,14.6],"tickmode":"array","ticktext":["","Brigham & Women's Hospital","California Department of Public Health","Carlos","Center for Disease Control and Prevention","CLC BIO","Colorado State University","Cornell University","Food and Drug Administration","Kerry Cooper","NCBI","North Dakota State University","United States Department of Agriculture","University of California Davis - 100K Genome Project"],"tickvals":[1,2,3,4,5,6,7,8,9,10,11,12,13,14],"categoryorder":"array","categoryarray":["","Brigham & Women's Hospital","California Department of Public Health","Carlos","Center for Disease Control and Prevention","CLC BIO","Colorado State University","Cornell University","Food and Drug Administration","Kerry Cooper","NCBI","North Dakota State University","United States Department of Agriculture","University of California Davis - 100K Genome Project"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-90,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"Collection Agency/Laboratory","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-99.9,2097.9],"tickmode":"array","ticktext":["0","500","1000","1500","2000"],"tickvals":[0,500,1000,1500,2000],"categoryorder":"array","categoryarray":["0","500","1000","1500","2000"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Num. of Sequences","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(51,51,51,1)","width":0.66417600664176,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895},"y":0.983759842519685},"annotations":[{"text":"Host","x":1.02,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"left","yanchor":"bottom","legendTitle":true}],"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"68f076d1738":{"x":{},"y":{},"fill":{},"type":"bar"}},"cur_data":"68f076d1738","visdat":{"68f076d1738":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<p>Roughly 2000 (~60%) sequences came from sub-branches within FDA, and 1050 (~32%) from the US Department of Argiculture (FSIS).</p>
+<p>Most of the livestock sequences come from those two agencies, whereas the human sequences are scattered across agenceis, the CDC and Universities.</p>
+<hr />
+</div>
+<div id="sub-branches" class="section level3">
+<h3>Sub-Branches</h3>
+<pre class="r"><code>org_plot_subbranch &lt;- clean_data %&gt;% count(Lab.Contact.1, Lab.Contact.2) %&gt;%
+  ggplot(aes(x=Lab.Contact.1, y=n, fill=Lab.Contact.2)) + 
+  geom_bar(stat =&quot;identity&quot;) +
+  labs(title=&quot;STm Sequences Collected in the United States&quot;, y= &quot;Number of Sequences&quot;, x=&quot;Collection Agency/Laboratory&quot;,fill=&quot;Sub-Branch&quot;)+
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+
+ggplotly(org_plot_subbranch)</code></pre>
+<div id="htmlwidget-8b1f9b936bccfdccc8c0" style="width:960px;height:960px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8b1f9b936bccfdccc8c0">{"x":{"data":[{"orientation":"v","width":[0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.899999999999999,0.899999999999999,0.899999999999999,0.899999999999999,0.899999999999999,0.899999999999999],"base":[0,0,0,0,69,0,0,0,1503,0,0,0,0],"x":[1,2,3,4,5,6,7,8,9,10,11,12,14],"y":[6,2,8,77,2,1,1,20,495,8,2,1,59],"text":["Lab.Contact.1: <br />n:    6<br />Lab.Contact.2: ","Lab.Contact.1: Brigham & Women's Hospital<br />n:    2<br />Lab.Contact.2: ","Lab.Contact.1: California Department of Public Health<br />n:    8<br />Lab.Contact.2: ","Lab.Contact.1: Carlos<br />n:   77<br />Lab.Contact.2: ","Lab.Contact.1: Center for Disease Control and Prevention<br />n:    2<br />Lab.Contact.2: ","Lab.Contact.1: CLC BIO<br />n:    1<br />Lab.Contact.2: ","Lab.Contact.1: Colorado State University<br />n:    1<br />Lab.Contact.2: ","Lab.Contact.1: Cornell University<br />n:   20<br />Lab.Contact.2: ","Lab.Contact.1: Food and Drug Administration<br />n:  495<br />Lab.Contact.2: ","Lab.Contact.1: Kerry Cooper<br />n:    8<br />Lab.Contact.2: ","Lab.Contact.1: NCBI<br />n:    2<br />Lab.Contact.2: ","Lab.Contact.1: North Dakota State University<br />n:    1<br />Lab.Contact.2: ","Lab.Contact.1: University of California Davis - 100K Genome Project<br />n:   59<br />Lab.Contact.2: "],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(248,118,109,1)","line":{"width":1.88976377952756,"color":"transparent"}},"legendgroup":"","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.899999999999999,"base":1048,"x":[13],"y":[11],"text":"Lab.Contact.1: United States Department of Agriculture<br />n:   11<br />Lab.Contact.2: Agricultural Research Service","type":"bar","marker":{"autocolorscale":false,"color":"rgba(205,150,0,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Agricultural Research Service","legendgroup":"Agricultural Research Service","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.899999999999999,"base":136,"x":[9],"y":[1367],"text":"Lab.Contact.1: Food and Drug Administration<br />n: 1367<br />Lab.Contact.2: Center for Food Safety and Applied Nutrition","type":"bar","marker":{"autocolorscale":false,"color":"rgba(124,174,0,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Center for Food Safety and Applied Nutrition","legendgroup":"Center for Food Safety and Applied Nutrition","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.899999999999999,"base":16,"x":[9],"y":[120],"text":"Lab.Contact.1: Food and Drug Administration<br />n:  120<br />Lab.Contact.2: Center for Veterinary Medicine","type":"bar","marker":{"autocolorscale":false,"color":"rgba(0,190,103,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Center for Veterinary Medicine","legendgroup":"Center for Veterinary Medicine","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.9,"base":17,"x":[5],"y":[52],"text":"Lab.Contact.1: Center for Disease Control and Prevention<br />n:   52<br />Lab.Contact.2: Enteric Diseases Laboratory Branch","type":"bar","marker":{"autocolorscale":false,"color":"rgba(0,191,196,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Enteric Diseases Laboratory Branch","legendgroup":"Enteric Diseases Laboratory Branch","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.899999999999999,"base":0,"x":[13],"y":[1048],"text":"Lab.Contact.1: United States Department of Agriculture<br />n: 1048<br />Lab.Contact.2: Food Safety and Inspection Service","type":"bar","marker":{"autocolorscale":false,"color":"rgba(0,169,255,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Food Safety and Inspection Service","legendgroup":"Food Safety and Inspection Service","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.899999999999999,"base":0,"x":[9],"y":[16],"text":"Lab.Contact.1: Food and Drug Administration<br />n:   16<br />Lab.Contact.2: National Center for Toxicological Research","type":"bar","marker":{"autocolorscale":false,"color":"rgba(199,124,255,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"National Center for Toxicological Research","legendgroup":"National Center for Toxicological Research","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.9,"base":0,"x":[5],"y":[17],"text":"Lab.Contact.1: Center for Disease Control and Prevention<br />n:   17<br />Lab.Contact.2: PulseNet","type":"bar","marker":{"autocolorscale":false,"color":"rgba(255,97,204,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"PulseNet","legendgroup":"PulseNet","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":40.8401826484018,"r":7.30593607305936,"b":329.497716894977,"l":48.9497716894977},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"title":{"text":"STm Sequences Collected in the United States","font":{"color":"rgba(0,0,0,1)","family":"","size":17.5342465753425},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.4,14.6],"tickmode":"array","ticktext":["","Brigham & Women's Hospital","California Department of Public Health","Carlos","Center for Disease Control and Prevention","CLC BIO","Colorado State University","Cornell University","Food and Drug Administration","Kerry Cooper","NCBI","North Dakota State University","United States Department of Agriculture","University of California Davis - 100K Genome Project"],"tickvals":[1,2,3,4,5,6,7,8,9,10,11,12,13,14],"categoryorder":"array","categoryarray":["","Brigham & Women's Hospital","California Department of Public Health","Carlos","Center for Disease Control and Prevention","CLC BIO","Colorado State University","Cornell University","Food and Drug Administration","Kerry Cooper","NCBI","North Dakota State University","United States Department of Agriculture","University of California Davis - 100K Genome Project"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-90,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"Collection Agency/Laboratory","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-99.9,2097.9],"tickmode":"array","ticktext":["0","500","1000","1500","2000"],"tickvals":[0,500,1000,1500,2000],"categoryorder":"array","categoryarray":["0","500","1000","1500","2000"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Number of Sequences","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(51,51,51,1)","width":0.66417600664176,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895},"y":0.983759842519685},"annotations":[{"text":"Sub-Branch","x":1.02,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"left","yanchor":"bottom","legendTitle":true}],"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"68f06a5e7f9d":{"x":{},"y":{},"fill":{},"type":"bar"}},"cur_data":"68f06a5e7f9d","visdat":{"68f06a5e7f9d":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<p>From the abbove we can see half the FDA sequences came from the Center for Food Safety and Applied Nutrition, whereas all the seuences from the USDA came from FSIS.</p>
+<p>The CDS sequences are also split, with the majority coming from the more general Enteric Diseases Laboratory Branch, and the rest from a specific sub-section of the aforementioned lab, <a href="https://www.cdc.gov/pulsenet/index.html">Pulsenet</a>, which aims to cluster diseases to detect outbreaks.</p>
+<hr />
+<p>Overall, most of my livestock sequences come from two goverment agencies, as desired. Human sequences however are a more mixed bag.</p>
+<p>Because of the overal low number of human sequences I have and how they are distributed, I will not be discarding any sequences at this stage. However, this will be something to keep in mind to investigate further down the road when refining my models.</p>
+<hr />
+<hr />
+</div>
+</div>
+<div id="state" class="section level2">
+<h2>State</h2>
+<pre class="r"><code># https://plotly.com/r/choropleth-maps/#using-builtin-country-and-state-geometries
+
+#Get counts of sequences by state and host, then pivot from long to wide format (with respect to host), and put empty cells as 0), AND calculate sum of seqs across hosts
+state_data &lt;- clean_data %&gt;% count(State_Code, Source.Host) %&gt;% pivot_wider(names_from = Source.Host, values_from = n, values_fill=list(n=0)) %&gt;% mutate(total_seqs = rowSums(.[2:5]))
+
+state_data %&gt;% datatable()</code></pre>
+<div id="htmlwidget-6699523923b37f1a1f6a" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6699523923b37f1a1f6a">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49"],["","AK","AL","AR","AZ","CA","CO","CT","DE","FL","GA","HI","IA","ID","IL","IN","KS","KY","LA","MA","MD","ME","MI","MN","MO","MS","MT","NC","ND","NE","NH","NJ","NM","NY","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VA","WA","WI","WV","WY"],[8,2,1,1,1,29,4,2,0,1,4,0,1,17,4,1,9,4,0,0,1,2,4,80,1,0,5,0,6,15,0,4,1,19,23,0,11,21,1,0,4,15,37,7,17,172,8,0,0],[157,0,0,0,0,8,50,0,0,1,0,0,0,0,0,0,0,0,0,3,0,1,3,24,0,0,1,0,0,0,0,0,0,18,1,0,8,10,0,0,0,0,0,0,0,45,1,0,0],[16,0,13,18,1,57,48,130,50,29,146,0,1,0,8,7,5,12,8,25,235,10,10,40,9,13,0,83,13,0,1,13,43,297,11,1,12,188,3,57,2,57,15,0,98,12,3,33,0],[8,0,1,2,0,18,4,3,1,0,7,2,12,1,29,2,4,8,0,3,8,0,2,309,9,1,0,57,1,8,0,5,10,12,9,2,11,12,0,4,2,12,5,4,9,6,2,0,1],[189,2,15,21,2,112,106,135,51,31,157,2,14,18,41,10,18,24,8,31,244,13,19,453,19,14,6,140,20,23,1,22,54,346,44,3,42,231,4,61,8,84,57,11,124,235,14,33,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>State_Code<\/th>\n      <th>Bovine<\/th>\n      <th>Human<\/th>\n      <th>Poultry<\/th>\n      <th>Swine<\/th>\n      <th>total_seqs<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4,5,6]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<pre class="r"><code># set what text appears when hovering over in interactive geo map
+state_data$hover&lt;- with(state_data, paste(State_Code, &#39;&lt;br&gt;&#39;,
+                                          &quot;Bovine Seqs: &quot;, Bovine, &#39;&lt;br&gt;&#39;,
+                                          &quot;Poultry Seqs: &quot;, Poultry, &#39;&lt;br&gt;&#39;,
+                                          &quot;Swine Seqs.: &quot; , Swine, &#39;&lt;br&gt;&#39;,
+                                          &quot;Human Seqs.: &quot; , Human, &#39;&lt;br&gt;&#39;
+                                          ))
+# give state boundaries a white border
+l &lt;- list(color = toRGB(&quot;white&quot;), width = 2)
+# specify some map projection/options
+g &lt;- list(
+  scope = &#39;usa&#39;,
+  projection = list(type = &#39;albers usa&#39;),
+  showlakes = TRUE,
+  lakecolor = toRGB(&#39;white&#39;)
+)
+
+#make plot
+plot_geo(state_data, locationmode = &#39;USA-states&#39;) %&gt;% 
+  add_trace(
+    z = ~total_seqs, text = ~hover, locations = ~State_Code,
+    color = ~total_seqs, colors = &#39;Reds&#39;) %&gt;% 
+  colorbar(title = &quot;STm Sequences&quot;) %&gt;% 
+  layout(
+    title = &#39;STm Sequences collected Across USA States between 1998-2019&#39;,
+    geo = g
+  )</code></pre>
+<pre><code>Warning: `arrange_()` is deprecated as of dplyr 0.7.0.
+Please use `arrange()` instead.
+See vignette(&#39;programming&#39;) for more help
+This warning is displayed once every 8 hours.
+Call `lifecycle::last_warnings()` to see where this warning was generated.</code></pre>
+<div id="htmlwidget-7dbbf5caac54ce1d38b8" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7dbbf5caac54ce1d38b8">{"x":{"visdat":{"68f07655713f":["function () ","plotlyVisDat"]},"cur_data":"68f07655713f","attrs":{"68f07655713f":{"locationmode":"USA-states","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"z":{},"text":{},"locations":{},"color":{},"colors":"Reds","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"mapType":"geo","scene":{"zaxis":{"title":"total_seqs"}},"geo":{"domain":{"x":[0,1],"y":[0,1]},"scope":"usa","projection":{"type":"albers usa"},"showlakes":true,"lakecolor":"rgba(255,255,255,1)"},"hovermode":"closest","showlegend":false,"legend":{"yanchor":"top","y":0.5},"title":"STm Sequences collected Across USA States between 1998-2019"},"source":"A","config":{"showSendToCloud":false},"data":[{"colorbar":{"title":"STm Sequences","ticklen":2,"len":0.5,"lenmode":"fraction","y":1,"yanchor":"top"},"colorscale":[["0","rgba(255,245,240,1)"],["0.0416666666666667","rgba(255,238,230,1)"],["0.0833333333333333","rgba(255,231,220,1)"],["0.125","rgba(254,224,210,1)"],["0.166666666666667","rgba(254,212,193,1)"],["0.208333333333333","rgba(253,199,177,1)"],["0.25","rgba(252,187,161,1)"],["0.291666666666667","rgba(253,174,145,1)"],["0.333333333333333","rgba(253,160,129,1)"],["0.375","rgba(252,146,114,1)"],["0.416666666666667","rgba(252,133,101,1)"],["0.458333333333333","rgba(252,120,87,1)"],["0.5","rgba(251,106,74,1)"],["0.541666666666667","rgba(247,92,64,1)"],["0.583333333333333","rgba(243,77,54,1)"],["0.625","rgba(239,59,44,1)"],["0.666666666666667","rgba(227,49,39,1)"],["0.708333333333333","rgba(215,37,34,1)"],["0.75","rgba(203,24,29,1)"],["0.791666666666667","rgba(190,21,26,1)"],["0.833333333333333","rgba(178,18,24,1)"],["0.875","rgba(165,15,21,1)"],["0.916666666666667","rgba(144,9,19,1)"],["0.958333333333333","rgba(123,3,16,1)"],["1","rgba(103,0,13,1)"]],"showscale":true,"locationmode":"USA-states","z":[189,2,15,21,2,112,106,135,51,31,157,2,14,18,41,10,18,24,8,31,244,13,19,453,19,14,6,140,20,23,1,22,54,346,44,3,42,231,4,61,8,84,57,11,124,235,14,33,1],"text":[" <br> Bovine Seqs:  8 <br> Poultry Seqs:  16 <br> Swine Seqs.:  8 <br> Human Seqs.:  157 <br>","AK <br> Bovine Seqs:  2 <br> Poultry Seqs:  0 <br> Swine Seqs.:  0 <br> Human Seqs.:  0 <br>","AL <br> Bovine Seqs:  1 <br> Poultry Seqs:  13 <br> Swine Seqs.:  1 <br> Human Seqs.:  0 <br>","AR <br> Bovine Seqs:  1 <br> Poultry Seqs:  18 <br> Swine Seqs.:  2 <br> Human Seqs.:  0 <br>","AZ <br> Bovine Seqs:  1 <br> Poultry Seqs:  1 <br> Swine Seqs.:  0 <br> Human Seqs.:  0 <br>","CA <br> Bovine Seqs:  29 <br> Poultry Seqs:  57 <br> Swine Seqs.:  18 <br> Human Seqs.:  8 <br>","CO <br> Bovine Seqs:  4 <br> Poultry Seqs:  48 <br> Swine Seqs.:  4 <br> Human Seqs.:  50 <br>","CT <br> Bovine Seqs:  2 <br> Poultry Seqs:  130 <br> Swine Seqs.:  3 <br> Human Seqs.:  0 <br>","DE <br> Bovine Seqs:  0 <br> Poultry Seqs:  50 <br> Swine Seqs.:  1 <br> Human Seqs.:  0 <br>","FL <br> Bovine Seqs:  1 <br> Poultry Seqs:  29 <br> Swine Seqs.:  0 <br> Human Seqs.:  1 <br>","GA <br> Bovine Seqs:  4 <br> Poultry Seqs:  146 <br> Swine Seqs.:  7 <br> Human Seqs.:  0 <br>","HI <br> Bovine Seqs:  0 <br> Poultry Seqs:  0 <br> Swine Seqs.:  2 <br> Human Seqs.:  0 <br>","IA <br> Bovine Seqs:  1 <br> Poultry Seqs:  1 <br> Swine Seqs.:  12 <br> Human Seqs.:  0 <br>","ID <br> Bovine Seqs:  17 <br> Poultry Seqs:  0 <br> Swine Seqs.:  1 <br> Human Seqs.:  0 <br>","IL <br> Bovine Seqs:  4 <br> Poultry Seqs:  8 <br> Swine Seqs.:  29 <br> Human Seqs.:  0 <br>","IN <br> Bovine Seqs:  1 <br> Poultry Seqs:  7 <br> Swine Seqs.:  2 <br> Human Seqs.:  0 <br>","KS <br> Bovine Seqs:  9 <br> Poultry Seqs:  5 <br> Swine Seqs.:  4 <br> Human Seqs.:  0 <br>","KY <br> Bovine Seqs:  4 <br> Poultry Seqs:  12 <br> Swine Seqs.:  8 <br> Human Seqs.:  0 <br>","LA <br> Bovine Seqs:  0 <br> Poultry Seqs:  8 <br> Swine Seqs.:  0 <br> Human Seqs.:  0 <br>","MA <br> Bovine Seqs:  0 <br> Poultry Seqs:  25 <br> Swine Seqs.:  3 <br> Human Seqs.:  3 <br>","MD <br> Bovine Seqs:  1 <br> Poultry Seqs:  235 <br> Swine Seqs.:  8 <br> Human Seqs.:  0 <br>","ME <br> Bovine Seqs:  2 <br> Poultry Seqs:  10 <br> Swine Seqs.:  0 <br> Human Seqs.:  1 <br>","MI <br> Bovine Seqs:  4 <br> Poultry Seqs:  10 <br> Swine Seqs.:  2 <br> Human Seqs.:  3 <br>","MN <br> Bovine Seqs:  80 <br> Poultry Seqs:  40 <br> Swine Seqs.:  309 <br> Human Seqs.:  24 <br>","MO <br> Bovine Seqs:  1 <br> Poultry Seqs:  9 <br> Swine Seqs.:  9 <br> Human Seqs.:  0 <br>","MS <br> Bovine Seqs:  0 <br> Poultry Seqs:  13 <br> Swine Seqs.:  1 <br> Human Seqs.:  0 <br>","MT <br> Bovine Seqs:  5 <br> Poultry Seqs:  0 <br> Swine Seqs.:  0 <br> Human Seqs.:  1 <br>","NC <br> Bovine Seqs:  0 <br> Poultry Seqs:  83 <br> Swine Seqs.:  57 <br> Human Seqs.:  0 <br>","ND <br> Bovine Seqs:  6 <br> Poultry Seqs:  13 <br> Swine Seqs.:  1 <br> Human Seqs.:  0 <br>","NE <br> Bovine Seqs:  15 <br> Poultry Seqs:  0 <br> Swine Seqs.:  8 <br> Human Seqs.:  0 <br>","NH <br> Bovine Seqs:  0 <br> Poultry Seqs:  1 <br> Swine Seqs.:  0 <br> Human Seqs.:  0 <br>","NJ <br> Bovine Seqs:  4 <br> Poultry Seqs:  13 <br> Swine Seqs.:  5 <br> Human Seqs.:  0 <br>","NM <br> Bovine Seqs:  1 <br> Poultry Seqs:  43 <br> Swine Seqs.:  10 <br> Human Seqs.:  0 <br>","NY <br> Bovine Seqs:  19 <br> Poultry Seqs:  297 <br> Swine Seqs.:  12 <br> Human Seqs.:  18 <br>","OH <br> Bovine Seqs:  23 <br> Poultry Seqs:  11 <br> Swine Seqs.:  9 <br> Human Seqs.:  1 <br>","OK <br> Bovine Seqs:  0 <br> Poultry Seqs:  1 <br> Swine Seqs.:  2 <br> Human Seqs.:  0 <br>","OR <br> Bovine Seqs:  11 <br> Poultry Seqs:  12 <br> Swine Seqs.:  11 <br> Human Seqs.:  8 <br>","PA <br> Bovine Seqs:  21 <br> Poultry Seqs:  188 <br> Swine Seqs.:  12 <br> Human Seqs.:  10 <br>","RI <br> Bovine Seqs:  1 <br> Poultry Seqs:  3 <br> Swine Seqs.:  0 <br> Human Seqs.:  0 <br>","SC <br> Bovine Seqs:  0 <br> Poultry Seqs:  57 <br> Swine Seqs.:  4 <br> Human Seqs.:  0 <br>","SD <br> Bovine Seqs:  4 <br> Poultry Seqs:  2 <br> Swine Seqs.:  2 <br> Human Seqs.:  0 <br>","TN <br> Bovine Seqs:  15 <br> Poultry Seqs:  57 <br> Swine Seqs.:  12 <br> Human Seqs.:  0 <br>","TX <br> Bovine Seqs:  37 <br> Poultry Seqs:  15 <br> Swine Seqs.:  5 <br> Human Seqs.:  0 <br>","UT <br> Bovine Seqs:  7 <br> Poultry Seqs:  0 <br> Swine Seqs.:  4 <br> Human Seqs.:  0 <br>","VA <br> Bovine Seqs:  17 <br> Poultry Seqs:  98 <br> Swine Seqs.:  9 <br> Human Seqs.:  0 <br>","WA <br> Bovine Seqs:  172 <br> Poultry Seqs:  12 <br> Swine Seqs.:  6 <br> Human Seqs.:  45 <br>","WI <br> Bovine Seqs:  8 <br> Poultry Seqs:  3 <br> Swine Seqs.:  2 <br> Human Seqs.:  1 <br>","WV <br> Bovine Seqs:  0 <br> Poultry Seqs:  33 <br> Swine Seqs.:  0 <br> Human Seqs.:  0 <br>","WY <br> Bovine Seqs:  0 <br> Poultry Seqs:  0 <br> Swine Seqs.:  1 <br> Human Seqs.:  0 <br>"],"locations":["","AK","AL","AR","AZ","CA","CO","CT","DE","FL","GA","HI","IA","ID","IL","IN","KS","KY","LA","MA","MD","ME","MI","MN","MO","MS","MT","NC","ND","NE","NH","NJ","NM","NY","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VA","WA","WI","WV","WY"],"type":"choropleth","marker":{"line":{"colorbar":{"title":"","ticklen":2},"cmin":1,"cmax":453,"colorscale":[["0","rgba(255,245,240,1)"],["0.0416666666666667","rgba(255,238,230,1)"],["0.0833333333333333","rgba(255,231,220,1)"],["0.125","rgba(254,224,210,1)"],["0.166666666666667","rgba(254,212,193,1)"],["0.208333333333333","rgba(253,199,177,1)"],["0.25","rgba(252,187,161,1)"],["0.291666666666667","rgba(253,174,145,1)"],["0.333333333333333","rgba(253,160,129,1)"],["0.375","rgba(252,146,114,1)"],["0.416666666666667","rgba(252,133,101,1)"],["0.458333333333333","rgba(252,120,87,1)"],["0.5","rgba(251,106,74,1)"],["0.541666666666667","rgba(247,92,64,1)"],["0.583333333333333","rgba(243,77,54,1)"],["0.625","rgba(239,59,44,1)"],["0.666666666666667","rgba(227,49,39,1)"],["0.708333333333333","rgba(215,37,34,1)"],["0.75","rgba(203,24,29,1)"],["0.791666666666667","rgba(190,21,26,1)"],["0.833333333333333","rgba(178,18,24,1)"],["0.875","rgba(165,15,21,1)"],["0.916666666666667","rgba(144,9,19,1)"],["0.958333333333333","rgba(123,3,16,1)"],["1","rgba(103,0,13,1)"]],"showscale":false,"color":[189,2,15,21,2,112,106,135,51,31,157,2,14,18,41,10,18,24,8,31,244,13,19,453,19,14,6,140,20,23,1,22,54,346,44,3,42,231,4,61,8,84,57,11,124,235,14,33,1]}},"geo":"geo","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<p>Overall, 189 of our sequences did not have state data.</p>
+<p>As we can see Minnesota was the state with the highest number of sequences recorded, with 453 (~14%) of our sequences. As a first look, I believe things are ok distribution wise, but if I wanted to be more thorough, I would need to consult someone more familiar with US livestock or who is more familiar with Salmonella sampling methods (i.e. more research/ expert input may be needed).</p>
+<hr />
+<hr />
+</div>
+<div id="chronology" class="section level2">
+<h2>Chronology</h2>
+<pre class="r"><code>#bar chart with hosts coloured differently and difference of 1 year
+#https://plotly.com/ggplot2/geom_bar/
+
+# Count seqs per year and host and plot as bar chart
+time_plot &lt;- clean_data %&gt;% count(Collection.Year, Source.Host) %&gt;% 
+  ggplot(aes(x=Collection.Year,y=n,fill=Source.Host)) + 
+  geom_bar(stat =&quot;identity&quot;) +
+  labs(title=&quot;STm Sequences Collected in the United States&quot;, x=&quot;Collection Year&quot;, y=&quot;Sequences&quot;, fill=&quot;Host&quot;)+
+  theme_bw() 
+
+#make plot interactive
+ggplotly(time_plot)</code></pre>
+<div id="htmlwidget-bd946e1627785af34b82" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-bd946e1627785af34b82">{"x":{"data":[{"orientation":"v","width":[0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091],"base":[1,15,11,22,73,75,69,46,63,129,197,151,177,152,135,132,206,229,351,354,180],"x":[1998,1999,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019],"y":[1,6,8,13,20,9,12,39,168,23,6,6,6,5,5,22,25,39,55,52,23],"text":["Collection.Year: 1998<br />n:   1<br />Source.Host: Bovine","Collection.Year: 1999<br />n:   6<br />Source.Host: Bovine","Collection.Year: 2001<br />n:   8<br />Source.Host: Bovine","Collection.Year: 2002<br />n:  13<br />Source.Host: Bovine","Collection.Year: 2003<br />n:  20<br />Source.Host: Bovine","Collection.Year: 2004<br />n:   9<br />Source.Host: Bovine","Collection.Year: 2005<br />n:  12<br />Source.Host: Bovine","Collection.Year: 2006<br />n:  39<br />Source.Host: Bovine","Collection.Year: 2007<br />n: 168<br />Source.Host: Bovine","Collection.Year: 2008<br />n:  23<br />Source.Host: Bovine","Collection.Year: 2009<br />n:   6<br />Source.Host: Bovine","Collection.Year: 2010<br />n:   6<br />Source.Host: Bovine","Collection.Year: 2011<br />n:   6<br />Source.Host: Bovine","Collection.Year: 2012<br />n:   5<br />Source.Host: Bovine","Collection.Year: 2013<br />n:   5<br />Source.Host: Bovine","Collection.Year: 2014<br />n:  22<br />Source.Host: Bovine","Collection.Year: 2015<br />n:  25<br />Source.Host: Bovine","Collection.Year: 2016<br />n:  39<br />Source.Host: Bovine","Collection.Year: 2017<br />n:  55<br />Source.Host: Bovine","Collection.Year: 2018<br />n:  52<br />Source.Host: Bovine","Collection.Year: 2019<br />n:  23<br />Source.Host: Bovine"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(248,118,109,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Bovine","legendgroup":"Bovine","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091],"base":[1,72,44,60,123,164,123,153,131,110,97,175,203,342,278,179],"x":[2001,2003,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019],"y":[10,1,2,3,6,33,28,24,21,25,35,31,26,9,76,1],"text":["Collection.Year: 2001<br />n:  10<br />Source.Host: Human","Collection.Year: 2003<br />n:   1<br />Source.Host: Human","Collection.Year: 2006<br />n:   2<br />Source.Host: Human","Collection.Year: 2007<br />n:   3<br />Source.Host: Human","Collection.Year: 2008<br />n:   6<br />Source.Host: Human","Collection.Year: 2009<br />n:  33<br />Source.Host: Human","Collection.Year: 2010<br />n:  28<br />Source.Host: Human","Collection.Year: 2011<br />n:  24<br />Source.Host: Human","Collection.Year: 2012<br />n:  21<br />Source.Host: Human","Collection.Year: 2013<br />n:  25<br />Source.Host: Human","Collection.Year: 2014<br />n:  35<br />Source.Host: Human","Collection.Year: 2015<br />n:  31<br />Source.Host: Human","Collection.Year: 2016<br />n:  26<br />Source.Host: Human","Collection.Year: 2017<br />n:   9<br />Source.Host: Human","Collection.Year: 2018<br />n:  76<br />Source.Host: Human","Collection.Year: 2019<br />n:   1<br />Source.Host: Human"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(124,174,0,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Human","legendgroup":"Human","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091],"base":[6,0,12,46,14,26,18,31,54,37,27,49,30,4,20,53,70,69,22,16],"x":[1999,2000,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019],"y":[9,2,10,26,61,43,26,29,69,127,96,104,101,106,77,122,133,273,256,163],"text":["Collection.Year: 1999<br />n:   9<br />Source.Host: Poultry","Collection.Year: 2000<br />n:   2<br />Source.Host: Poultry","Collection.Year: 2002<br />n:  10<br />Source.Host: Poultry","Collection.Year: 2003<br />n:  26<br />Source.Host: Poultry","Collection.Year: 2004<br />n:  61<br />Source.Host: Poultry","Collection.Year: 2005<br />n:  43<br />Source.Host: Poultry","Collection.Year: 2006<br />n:  26<br />Source.Host: Poultry","Collection.Year: 2007<br />n:  29<br />Source.Host: Poultry","Collection.Year: 2008<br />n:  69<br />Source.Host: Poultry","Collection.Year: 2009<br />n: 127<br />Source.Host: Poultry","Collection.Year: 2010<br />n:  96<br />Source.Host: Poultry","Collection.Year: 2011<br />n: 104<br />Source.Host: Poultry","Collection.Year: 2012<br />n: 101<br />Source.Host: Poultry","Collection.Year: 2013<br />n: 106<br />Source.Host: Poultry","Collection.Year: 2014<br />n:  77<br />Source.Host: Poultry","Collection.Year: 2015<br />n: 122<br />Source.Host: Poultry","Collection.Year: 2016<br />n: 133<br />Source.Host: Poultry","Collection.Year: 2017<br />n: 273<br />Source.Host: Poultry","Collection.Year: 2018<br />n: 256<br />Source.Host: Poultry","Collection.Year: 2019<br />n: 163<br />Source.Host: Poultry"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(0,191,196,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Poultry","legendgroup":"Poultry","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091,0.900000000000091],"base":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"x":[1998,1999,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019],"y":[1,6,1,12,46,14,26,18,31,54,37,27,49,30,4,20,53,70,69,22,16],"text":["Collection.Year: 1998<br />n:   1<br />Source.Host: Swine","Collection.Year: 1999<br />n:   6<br />Source.Host: Swine","Collection.Year: 2001<br />n:   1<br />Source.Host: Swine","Collection.Year: 2002<br />n:  12<br />Source.Host: Swine","Collection.Year: 2003<br />n:  46<br />Source.Host: Swine","Collection.Year: 2004<br />n:  14<br />Source.Host: Swine","Collection.Year: 2005<br />n:  26<br />Source.Host: Swine","Collection.Year: 2006<br />n:  18<br />Source.Host: Swine","Collection.Year: 2007<br />n:  31<br />Source.Host: Swine","Collection.Year: 2008<br />n:  54<br />Source.Host: Swine","Collection.Year: 2009<br />n:  37<br />Source.Host: Swine","Collection.Year: 2010<br />n:  27<br />Source.Host: Swine","Collection.Year: 2011<br />n:  49<br />Source.Host: Swine","Collection.Year: 2012<br />n:  30<br />Source.Host: Swine","Collection.Year: 2013<br />n:   4<br />Source.Host: Swine","Collection.Year: 2014<br />n:  20<br />Source.Host: Swine","Collection.Year: 2015<br />n:  53<br />Source.Host: Swine","Collection.Year: 2016<br />n:  70<br />Source.Host: Swine","Collection.Year: 2017<br />n:  69<br />Source.Host: Swine","Collection.Year: 2018<br />n:  22<br />Source.Host: Swine","Collection.Year: 2019<br />n:  16<br />Source.Host: Swine"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(199,124,255,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Swine","legendgroup":"Swine","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":43.7625570776256,"r":7.30593607305936,"b":40.1826484018265,"l":43.1050228310502},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"title":{"text":"STm Sequences Collected in the United States","font":{"color":"rgba(0,0,0,1)","family":"","size":17.5342465753425},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[1996.455,2020.545],"tickmode":"array","ticktext":["2000","2005","2010","2015","2020"],"tickvals":[2000,2005,2010,2015,2020],"categoryorder":"array","categoryarray":["2000","2005","2010","2015","2020"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"Collection Year","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-20.3,426.3],"tickmode":"array","ticktext":["0","100","200","300","400"],"tickvals":[0,100,200,300,400],"categoryorder":"array","categoryarray":["0","100","200","300","400"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Sequences","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(51,51,51,1)","width":0.66417600664176,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895},"y":0.96751968503937},"annotations":[{"text":"Host","x":1.02,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"left","yanchor":"bottom","legendTitle":true}],"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"68f05817182c":{"x":{},"y":{},"fill":{},"type":"bar"}},"cur_data":"68f05817182c","visdat":{"68f05817182c":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<p>Generally, more Salmonella camples collected with each year, though when split up by hosts, some different patterns emerge:</p>
+<ul>
+<li><p>Poultry follows the general trendline with collected sequences increasing each year</p></li>
+<li><p>Swine sequence collection is overall the same, though with peaks and lows</p></li>
+<li><p>Most bovine sequences were collected in 2007, with more other collected sequences scattered throughout the years</p></li>
+<li><p>Human sequence collection is also sporadic, with most sequences clustered to certain years</p></li>
+</ul>
+<p>The collection process is dependent on many factors, including outbreaks, monitoring guidelines and (to an extent) pure chance. It would be good to compare to historic outreak data, which may have resulted in more intense sample collection, as well as host/context-specific monitoring guidelines which may explain differences.</p>
+<p>Overall though, sequences across hosts are spread across years, and despite diferent patterns, I do not believe that will be a cause of concern for my dataset.</p>
+<hr />
+<hr />
+</div>
+</div>
+<div id="conclusion" class="section level1">
+<h1>Conclusion</h1>
+<p>Overall, my expectaions were met, and though there may ares to examine further in the future while refining my models, I can currently say that my dataset will be adequate:</p>
+<ul>
+<li><p>The dataset sequences are distributed across hosts, with over 500 sequences per host and with the poultry dataset dwarfing all others.</p></li>
+<li><p>The vast majority of my sequences were collected from goverment agencies</p></li>
+<li><p>Livestock sequences were chiefly collected from monitoring agenceis such as the USDA and FDA</p></li>
+<li><p>Human sequences were a mix of CDC, FDA and various lab groups.</p></li>
+<li><p>The majority of sequences had associated regional data. Minessota had the biggest minority of sequences (~14%) and abot half of the swine sequences.</p></li>
+<li><p>Chronologically, the general trendline is an increase in sequences collected in latter years.</p></li>
+</ul>
+<br>
+<p>
+<button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
+<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Session information
+</button>
+</p>
+<div id="workflowr-sessioninfo" class="collapse">
+<pre class="r"><code>sessionInfo()</code></pre>
+<pre><code>R version 4.0.2 (2020-06-22)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 18362)
+
+Matrix products: default
+
+locale:
+[1] LC_COLLATE=English_United Kingdom.1252 
+[2] LC_CTYPE=English_United Kingdom.1252   
+[3] LC_MONETARY=English_United Kingdom.1252
+[4] LC_NUMERIC=C                           
+[5] LC_TIME=English_United Kingdom.1252    
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] plotly_4.9.2.1  DT_0.15         forcats_0.5.0   stringr_1.4.0  
+ [5] dplyr_1.0.2     purrr_0.3.4     readr_1.3.1     tidyr_1.1.2    
+ [9] tibble_3.0.3    ggplot2_3.3.2   tidyverse_1.3.0 workflowr_1.6.2
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_1.0.5         lubridate_1.7.9    assertthat_0.2.1   rprojroot_1.3-2   
+ [5] digest_0.6.25      R6_2.4.1           cellranger_1.1.0   backports_1.1.9   
+ [9] reprex_0.3.0       evaluate_0.14      httr_1.4.2         pillar_1.4.6      
+[13] rlang_0.4.7        lazyeval_0.2.2     readxl_1.3.1       rstudioapi_0.11   
+[17] data.table_1.13.0  whisker_0.4        blob_1.2.1         rmarkdown_2.3     
+[21] labeling_0.3       htmlwidgets_1.5.1  munsell_0.5.0      broom_0.7.0       
+[25] compiler_4.0.2     httpuv_1.5.4       modelr_0.1.8       xfun_0.16         
+[29] pkgconfig_2.0.3    htmltools_0.5.0    tidyselect_1.1.0   fansi_0.4.1       
+[33] viridisLite_0.3.0  crayon_1.3.4       dbplyr_1.4.4       withr_2.2.0       
+[37] later_1.1.0.1      grid_4.0.2         jsonlite_1.7.0     gtable_0.3.0      
+[41] lifecycle_0.2.0    DBI_1.1.0          git2r_0.27.1       magrittr_1.5      
+[45] scales_1.1.1       cli_2.0.2          stringi_1.4.6      farver_2.0.3      
+[49] fs_1.5.0           promises_1.1.1     xml2_1.3.2         ellipsis_0.3.1    
+[53] generics_0.0.2     vctrs_0.3.3        RColorBrewer_1.1-2 tools_4.0.2       
+[57] glue_1.4.2         crosstalk_1.1.0.1  hms_0.5.3          yaml_2.2.1        
+[61] colorspace_1.4-1   rvest_0.3.6        knitr_1.29         haven_2.3.1       </code></pre>
+</div>
+</div>
+
+
+<!-- Adjust MathJax settings so that all math formulae are shown using
+TeX fonts only; see
+http://docs.mathjax.org/en/latest/configuration.html.  This will make
+the presentation more consistent at the cost of the webpage sometimes
+taking slightly longer to load. Note that this only works because the
+footer is added to webpages before the MathJax javascript. -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
