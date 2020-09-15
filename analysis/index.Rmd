@@ -60,6 +60,7 @@ In summary, our dataset must have the following characteristics:
 [Enterobase](http://enterobase.warwick.ac.uk/species/index/senterica) is a repository of publicly available *S. enterica* sequences.
 
 At first glance, there are hunderds of thousands sequenecs available!
+
 ![enterobase_totals](../data/enterobase_screenshot/total.png)
 
 Country-wise, it seems the UK and the USA have the most sequences.However, when looking at host data...
