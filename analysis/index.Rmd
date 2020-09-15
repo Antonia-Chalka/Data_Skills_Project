@@ -70,7 +70,7 @@ Country-wise, it seems the UK and the USA have the most sequences.However, when 
 ![Host Data](../data/enterobase_screenshot/source_type.png)
 
 With that in mind, I started constructing queries for each host, where it became obvious that the data was quite messy...
-To demonstrate, below is one of the queries I used to capture the range
+To demonstrate, below is one of the queries I used to capture the range:
 
 ![Chicken_product_query](../data/enterobase_screenshot/STm_USA_ChickenProducts_Query1.png)
 ![Chicken_product_query](../data/enterobase_screenshot/STm_USA_ChickenProducts_Query2.png)
@@ -125,11 +125,11 @@ summary(clean_data)
 
 # Analysis
 
-**Goal**: what do I have in my dataset, and is it appropriate for my reserach? (What **is** appropriate for my reserach in the first place?)
+**Goal**: What do I have in my dataset, and is it appropriate for my reserach? (What **is** appropriate for my reserach in the first place?)
 
 **General Points of Interest**
 
-**Host**: at least 100 sequences per host, and good spread across subcategories (especially in animal/products, environmental is interesting to examine but not vital)
+**Host**: At least 100 sequences per host, and good spread across subcategories (especially in animal/products, environmental is interesting to examine but not vital)
 
 **Organisation**: Due to different collection and analysis methods, the majority of my sequences should come from govermental agencies, such as the CDC for clinical samples or the FDA for food samples.
 
@@ -224,7 +224,6 @@ Because of the overal low number of human sequences I have and how they are dist
 ## State
 
 
-
 ```{r}
 # https://plotly.com/r/choropleth-maps/#using-builtin-country-and-state-geometries
 
@@ -309,4 +308,16 @@ Overall though, sequences across hosts are spread across years, and despite dife
 
 # Conclusion
 
-Overall, my expectaions were met, and though there may ares to examine further in the future while refining my models, I can currently say that my dataset will be adequate.
+Overall, my expectaions were met, and though there may ares to examine further in the future while refining my models, I can currently say that my dataset will be adequate:
+
+* The dataset sequences are distributed across hosts, with over 500 sequences per host and with the poultry dataset dwarfing all others.
+
+* The vast majority of my sequences were collected from goverment agencies
+
+ + Livestock sequences were chiefly collected from monitoring agenceis such as the USDA and FDA
+ 
+ + Human sequences were a mix of CDC, FDA and various lab groups.
+ 
+* The majority of sequences had associated regional data. Minessota had the biggest minority of sequences (~14%) and abot half of the swine sequences. 
+
+* Chronologically, the general trendline is an increase in sequences collected in latter years.
